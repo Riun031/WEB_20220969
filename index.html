@@ -11,9 +11,15 @@
         <base href="https://web--jrjsc.run.goorm.site/">
      	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 		<script type="text/javascript" src="js/search.js" defer></script>
+		<script type="text/javascript" src="js/basic_test.js" defer></script>
+		<script type="text/javascript" src="js/date_type.js" defer></script>
+		<script type="text/javascript" src="js/pop_up.js" defer></script>
+		<script type="text/javascript" src="js/hover.js" defer></script>
+		<meta charset="UTF-8">
+
 
     </head>
-    <body>
+    <body onload ='pop_up();'>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
@@ -66,7 +72,7 @@
         <!p style="text-align:center">
 		<div class="mx-auto" style="width: 500px;">
             <a href="index.html" target="_self">
-                <img src="img/q.png" class="img-fluid" alt="구글이미지">
+                <img src="img/q.png" class="img-fluid" alt="구글이미지"onmouseover="over(this)" onmouseout="out(this)">
             </a>
 			</div>
         <!/p>
@@ -76,16 +82,19 @@
 		<form action="https://www.google.co.kr/search" method="GET" target="_blank">
             <div class="d-flex justify-content-center">
                 <mx-auto>
-                    <input name="query" type="text" class="form-control-lg" placeholder="검색어 입력" aria-label="search" aria-describedby="search_btn">
+                    <input name="query" type="text" class="form-control-lg" placeholder="검색어 입력" aria-label="search" aria-describedby="search_btn" id="search_txt">
+
                 </mx-auto>
                 <button class="btn btn-success" type="submit" id="search_btn">검색</button>
            </div>
+			<caption align="top">현재 검색어 : <p id="search_message"></p></caption>
+
         </form>
 
         <br><br><!간격을 위해 줄바꿈을 여러번 추가>
          <div class="w-auto p-3" style="background-color: #;">
         <!-- <table class="table table-striped table-bordered table-hover"> -->
-        <table class="table table-dark table-hover">
+        <table class="table table-info table-hover">
 	<caption align="top">인기 검색어</caption>
 	<tbody class="table-group-divider">
                 <tr bgcolor="yellow">
