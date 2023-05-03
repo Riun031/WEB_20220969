@@ -21,5 +21,7 @@ function showclock(){
         if (currentDate.getMinutes()>58) {    //정각 1분전 빨강색 출력
           divClock.style.color="red";
         }
-        setTimeout(showclock, 1000);  //1초마다 갱신
+	let msg = "남은 시간은"
+        setTimeout(showclock, 1000);//1초마다 갱신
+	let msg = "초 입니다."
 }
