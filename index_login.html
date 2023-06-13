@@ -14,11 +14,12 @@
         <script type="text/javascript" src="js/data_type.js" defer></script>
         <script type="text/javascript" src="js/login.js" defer></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script> 
-
+		
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    </head>
+    
+	</head>
     <body onload="get_id();">
         <!script로 시작하면, java script를 사용하겠다는 의미. .js가 자바스크립트파일 코드가 많아질 경우, 파일을 불러와 사용.>
         <nav class="navbar navbar-expand-lg bg-light">
@@ -64,7 +65,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-outline-success" type="submit" onclick="logout()">로그아웃</button>
+                            <button class="btn btn-outline-success" type="button" onclick="logout()">로그아웃</button>
                         </li>
                     </ul>
                 </div>
@@ -89,6 +90,9 @@
                 </button>
             </div>
         </form>
+		
+
+		
         <!--<p style="text-align:center">
                                     검색:
                                     <input type="text" name="search" size="55" value="">
@@ -107,98 +111,63 @@
                 <caption align="top" style="text-align:left">
                     <b>인기 검색어</b>
                 </caption>
-                <tbody class="table-group-divider">
-                    <tr>
-                        <td class="table-primary" width="50">
-                            <b>영화</b>
-                        </td>
-                        <td width="80">아저씨</td>
-                        <td width="80">아저씨</td>
-                        <td width="100">어머니</td>
-                        <td width="100">헬머니</td>
-                        <td>할부지</td>
-                    </tr>
-                    <tr>
-                        <td class="table-secondary" width="50">
-                            <b>음악</b>
-                        </td>
-                        <td>KPOP</td>
-                        <td>JPOP</td>
-                        <td>ROCK1</td>
-                        <td>ROCK2</td>
-                        <td>EUROBEAT</td>
-                    </tr>
-                    <tr>
-                        <td class="table-success" width="50">
-                            <b>게임</b>
-                        </td>
-                        <td>LOL</td>
-                        <td>WOW</td>
-                        <td>DIABLO</td>
-                        <td colspan="2">SUDDEN ATTACK 2</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <!--table<table style="margin-left: auto; margin-right: auto;" border="1.5" width="500">
-                                                    <caption align="top" style="text-align:center">인기 검색어</caption>
-                                                    <tboby>
-                                                        <tr style="text-align:center">
-                                                            <td bgcolor="green" width="50">
-                                                                <b>영화</b>
-                                                            </td>
-                                                            <td width="80" bgcolor="blue">아저씨</td>
-                                                            <td width="100">아저씨</td>
-                                                            <td width="100">어머니</td>
-                                                            <td width="100">헬머니</td>
-                                                            <td width="100">할부지</td>
-                                                        </tr>
-                                                        <tr bgcolor="CCFFFF" style="text-align:center">
-                                                            <td width="50">
-                                                                <b>음악</b>
-                                                            </td>
-                                                            <td width="100">KPOP</td>
-                                                            <td width="100">JPOP</td>
-                                                            <td width="100">ROCK1</td>
-                                                            <td width="100">ROCK2</td>
-                                                            <td rowspan="2" width="100">EURO BEAT</td>
-                                                        </tr>
-                                                        <tr bgcolor="red" style="text-align:center">
-                                                            <td colspan="2" width="50">게임</td>
-                                                            <!colspan은 열 병합, rowspan은 행 병합>
-                                                            <td>LOL</td>
-                                                            <td>WOW</td>
-                                                            <td>SUDDEN</td>
-                                                        </tr>
-                                                        <tr style="text-align:center">
-                                                            <td bgcolor="blue" colspan="6">
-                                                                <font color="white">
-                                                                    <b>외부 사이트 링크</b>
-                                                                </font>
-                                                            </td>
-                                                        </tr>
-                                                        <tr width="100" style="text-align:center">
-                                                            <td bgcolor="red" colspan="2" width="50">
-                                                                <a href="https://www.naver.com/" target="_blank">네이버</a>
-                                                            </td>
-                                                            <td bgcolor="yellow" colspan="2" width="50">
-                                                                <a href="https://www.daum.net/" target="_blank">다음</a>
-                                                            </td>
-                                                            <td bgcolor="black" colspan="2" width="50">
-                                                                <a href="https://www.nate.com/" target="_blank">
-                                                                    <font style color="White">네이트</font>
-                                                                </a>
-                                                            </td>
-                                                        </tr>
-                                                    </tboby>
-                                                </table>-->
+        <tbody class="table-group-divider">
+            <tr>
+                <td class="table-primary" width="50">
+                    <b>영화</b>
+                </td>
+                <td width="80">겨울왕국</td>
+                <td width="80">엔칸토</td>
+                <td width="100">인어공주</td>
+                <td width="100">범죄도시</td>
+            </tr>
+            <tr>
+                <td class="table-secondary" width="50">
+                    <b>음악</b>
+                </td>
+                <td>회전목마</td>
+                <td>분홍신</td>
+                <td>꽃</td>
+                <td>이게무슨일이야</td>
+            </tr>
+            <tr>
+                <td class="table-success" width="50">
+                    <b>게임</b>
+                </td>
+                <td>리그오브레전드</td>
+                <td>발로란트</td>
+                <td>데스티니가디언즈</td>
+                <td>스타듀벨리</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table class="table table-light table-hover" style="text-align:center">
+        <thead>
+            <tr>
+                <th scope="col">포털 사이트</th>
+                <th scope="col">링크</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="py-2" style="background-color: #7CEA9C;"><span style="color: #000000;">네이버</span></td>
+                <td class="py-2"><a href="https://www.naver.com" target="_blank" style="color: #000000;">https://www.naver.com</a></td>
+            </tr>
+            <tr>
+                <td class="py-2" style="background-color: #eb7a85;"><span style="color: #000000;">다음</span></td>
+                <td class="py-2"><a href="https://www.daum.net" target="_blank" style="color: #000000;">https://www.daum.net</a></td>
+            </tr>
+            <tr>
+                <td class="py-2" style="background-color: #7988e8;"><span style="color: #000000;">구글</span></td>
+                <td class="py-2"><a href="https://www.google.com" target="_blank" style="color: #000000;">https://www.google.com</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+		
         <br><br><hr>
-        <!--<p style="text-align:right;">
-                            <font size="2em" color="red">
-                                문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등
-                            </font>
-                        </p>
-                        <br><! br은 줄 바꿈입니다.>-->
+       
         <footer class="bg-light text-center text-lg-start">
             <div class="text-center p-3" style="background-color:#D8D8D8;">
                 <h3 class="text-secondary">FOOTER TEST</h3>
